@@ -1,0 +1,32 @@
+:root{--ink:#0b2a52;--sky:#19aeff;--deep:#0f5c99;--navy:#041033;--ice:#e8f6ff;--snow:#fff;--wa:#1faa59}
+*{box-sizing:border-box}
+body{margin:0;font:1.05rem/1.65 "Source Sans 3","Segoe UI",system-ui,sans-serif;color:var(--ink);background:var(--snow)}
+h1,h2,.brand{font-family:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;line-height:1.1}
+a{color:var(--deep)}a:focus-visible,.btn:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+.top{display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:space-between;align-items:center;padding:.6rem clamp(1rem,5vw,4rem);background:var(--navy)}
+.top a{color:var(--snow);text-decoration:none}
+.brand{display:flex;align-items:center;gap:.7rem;font-weight:700;font-size:1.1rem}.brand img{height:2.8rem;width:auto}
+nav{display:flex;gap:1.3rem;flex-wrap:wrap}nav a{padding:.2rem 0;border-bottom:2px solid transparent}nav a[aria-current],nav a:hover{border-bottom-color:var(--sky)}
+.hero{position:relative;overflow:hidden;background:var(--sky);color:var(--snow);text-align:center;padding:clamp(2rem,5vw,4rem) 1rem 7rem}
+.peaks{position:absolute;inset:auto 0 0 0;width:100%;height:65%;z-index:0}
+.copy{position:relative;z-index:1;max-width:46rem;margin:0 auto}
+.logo{width:min(70vw,340px);height:auto;filter:drop-shadow(0 6px 14px rgba(4,16,51,.35))}
+.hero h1{font-size:clamp(2rem,5vw,3.3rem);margin:1rem 0 .6rem;text-shadow:0 2px 10px rgba(4,16,51,.4)}
+.hero .lead{max-width:34rem;margin:0 auto;font-size:1.2rem;text-shadow:0 1px 8px rgba(4,16,51,.5)}
+.tag{font:600 clamp(1.7rem,4.5vw,2.6rem)/1.2 "Caveat","Segoe Script",cursive;margin:1rem 0 0;text-shadow:0 2px 8px rgba(4,16,51,.6)}
+.small{font-size:.95rem;opacity:.9}.hero .actions{justify-content:center}
+.actions{display:flex;flex-wrap:wrap;gap:.75rem;margin:1.3rem 0}
+.btn{display:inline-block;padding:.8rem 1.3rem;border-radius:.4rem;background:var(--navy);color:var(--snow);text-decoration:none;font-weight:600}
+.btn.wa{background:var(--wa)}.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
+.hero .btn.ghost{color:var(--snow);box-shadow:inset 0 0 0 2px var(--snow)}
+.frost{position:absolute;inset:0;z-index:2;background:rgba(232,246,255,.97);animation:wipe 1.6s .3s ease-in-out forwards}
+.squeegee{position:absolute;z-index:3;top:0;bottom:0;left:0;width:12px;background:#8a8f99;animation:swipe 1.6s .3s ease-in-out forwards}
+@keyframes wipe{to{clip-path:inset(0 0 0 100%)}}@keyframes swipe{to{left:calc(100% - 12px)}}
+.frost{clip-path:inset(0)}
+@media (prefers-reduced-motion:reduce){.frost,.squeegee{display:none}}
+h1{font-size:clamp(2.2rem,5vw,3.4rem);margin:0 0 1rem}h2{font-size:1.5rem;margin:1.5rem 0 .5rem}.lead{font-size:1.25rem}
+.band,.prose{padding:3rem clamp(1rem,5vw,4rem)}.prose{max-width:50rem}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}.cols.two{grid-template-columns:repeat(2,1fr)}
+.card{background:var(--ice);padding:1.5rem;border-radius:.4rem;border-top:4px solid var(--sky)}.card h2{margin-top:0}
+footer{padding:2rem clamp(1rem,5vw,4rem);background:var(--navy);color:var(--ice);font-size:.95rem}footer p{margin:.3rem 0}footer a{color:#9ff5ff}
+@media (max-width:760px){.cols,.cols.two{grid-template-columns:1fr}.hero{padding-bottom:5rem}}
