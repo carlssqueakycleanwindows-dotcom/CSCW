@@ -30,3 +30,10 @@ h1{font-size:clamp(2.2rem,5vw,3.4rem);margin:0 0 1rem}h2{font-size:1.5rem;margin
 .card{background:var(--ice);padding:1.5rem;border-radius:.4rem;border-top:4px solid var(--sky)}.card h2{margin-top:0}
 footer{padding:2rem clamp(1rem,5vw,4rem);background:var(--navy);color:var(--ice);font-size:.95rem}footer p{margin:.3rem 0}footer a{color:#9ff5ff}
 @media (max-width:760px){.cols,.cols.two{grid-template-columns:1fr}.hero{padding-bottom:5rem}}
+
+.prose.wide{max-width:70rem}
+.reviews{columns:2 22rem;column-gap:1.5rem;margin-top:2rem}
+.review{break-inside:avoid;margin:0 0 1.5rem;padding:1.4rem 1.5rem;background:var(--ice);border-top:4px solid var(--sky);border-radius:.4rem}
+.stars{color:#c98a00;font-size:1.15rem;letter-spacing:.15em}
+.review blockquote{margin:.5rem 0 .8rem}.review blockquote p{margin:0}
+.review figcaption{font-weight:600}.review figcaption span{display:block;font-weight:400;font-size:.9rem;opacity:.75}
