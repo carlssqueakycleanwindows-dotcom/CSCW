@@ -3,9 +3,9 @@
 body{margin:0;font:1.05rem/1.65 "Source Sans 3","Segoe UI",system-ui,sans-serif;color:var(--ink);background:var(--snow)}
 h1,h2,.brand{font-family:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;line-height:1.1}
 a{color:var(--deep)}a:focus-visible,.btn:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
-.top{display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:space-between;align-items:center;padding:.6rem clamp(1rem,5vw,4rem);background:var(--navy)}
-.top a{color:var(--snow);text-decoration:none}
-.brand{display:flex;align-items:center;gap:.7rem;font-weight:700;font-size:1.1rem}.brand img{height:2.8rem;width:auto}
+.top{display:flex;flex-wrap:wrap;gap:.6rem 2rem;justify-content:space-between;align-items:center;padding:.9rem clamp(1rem,5vw,4rem);background:var(--snow);border-bottom:4px solid var(--sky)}
+.top a{color:var(--ink);text-decoration:none;font-weight:600}
+.brand{display:block;flex:0 1 26rem}.brand img{display:block;width:100%;height:auto}
 nav{display:flex;gap:1.3rem;flex-wrap:wrap}nav a{padding:.2rem 0;border-bottom:2px solid transparent}nav a[aria-current],nav a:hover{border-bottom-color:var(--sky)}
 .hero{position:relative;overflow:hidden;background:var(--sky);color:var(--snow);text-align:center;padding:clamp(2rem,5vw,4rem) 1rem 7rem}
 .peaks{position:absolute;inset:auto 0 0 0;width:100%;height:65%;z-index:0}
@@ -37,3 +37,4 @@ footer{padding:2rem clamp(1rem,5vw,4rem);background:var(--navy);color:var(--ice)
 .stars{color:#c98a00;font-size:1.15rem;letter-spacing:.15em}
 .review blockquote{margin:.5rem 0 .8rem}.review blockquote p{margin:0}
 .review figcaption{font-weight:600}.review figcaption span{display:block;font-weight:400;font-size:.9rem;opacity:.75}
+@media (max-width:520px){nav{gap:.4rem .8rem;width:100%;justify-content:space-between}nav a{font-size:.9rem}.top{padding:.7rem 1rem}}
