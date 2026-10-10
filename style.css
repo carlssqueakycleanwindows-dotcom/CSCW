@@ -62,3 +62,9 @@ footer{padding:2rem clamp(1rem,5vw,4rem);background:var(--navy);color:var(--ice)
 .hero h1{margin:.9rem 0 .6rem}
 .hero .lead{line-height:1.5}
 .hero .actions{margin:1.4rem 0 1rem}
+
+/* Home: main line is now the page heading; bigger logo; buttons lower */
+.logo{width:min(70vw,clamp(140px,calc((100vh - 60px)*.34),400px));width:min(70vw,clamp(140px,calc((100svh - 60px)*.34),400px))}
+.hero h1.lead{font-size:clamp(1.25rem,2.4vw,1.9rem);font-weight:700;line-height:1.2;margin:1rem auto .6rem;max-width:none}
+.hero .actions{margin:2.2rem 0 1rem}
+.hero h1.lead{text-wrap:balance}
