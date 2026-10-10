@@ -55,3 +55,10 @@ footer{padding:2rem clamp(1rem,5vw,4rem);background:var(--navy);color:var(--ice)
 .hero .small{margin:0}
 .backdrop{height:auto;aspect-ratio:2520/530;background-size:100% 100%}
 @media (max-width:700px){:root{--h:170px}.backdrop{aspect-ratio:auto;height:var(--h);background-size:cover}}
+
+/* Strapline sits on the mountains; more room for the text above */
+.hero .tag{position:absolute;left:0;right:0;bottom:calc(var(--h)*.5);z-index:1;margin:0}
+.logo{width:min(70vw,clamp(120px,calc((100vh - 60px)*.27),340px));width:min(70vw,clamp(120px,calc((100svh - 60px)*.27),340px))}
+.hero h1{margin:.9rem 0 .6rem}
+.hero .lead{line-height:1.5}
+.hero .actions{margin:1.4rem 0 1rem}
