@@ -42,3 +42,16 @@ footer{padding:2rem clamp(1rem,5vw,4rem);background:var(--navy);color:var(--ice)
 @media (max-width:520px){nav{gap:.4rem .8rem;width:100%;justify-content:space-between}nav a{font-size:.9rem}.top{padding:.7rem 1rem}}
 
 .strap{display:block;margin:0 auto;width:min(92vw,720px);height:auto;filter:drop-shadow(0 2px 6px rgba(4,16,51,.6))}
+
+/* Tighter hero so the mountains show on first view */
+:root{--h:calc(100vw/4.75)}
+.hero{min-height:calc(100vh - 60px);min-height:calc(100svh - 60px);padding:clamp(1rem,3vh,2rem) 1rem calc(var(--h)*.88)}
+.copy{max-width:54rem}
+.logo{width:min(70vw,clamp(120px,calc((100vh - 60px)*.24),340px));width:min(70vw,clamp(120px,calc((100svh - 60px)*.24),340px))}
+.hero h1{font-size:clamp(1.8rem,3.6vw,3rem);margin:.6rem 0 .4rem}
+.hero .lead{max-width:none;font-size:clamp(1rem,1.5vw,1.2rem)}
+.tag{margin:.6rem 0 0}
+.hero .actions{margin:1rem 0 .8rem}
+.hero .small{margin:0}
+.backdrop{height:auto;aspect-ratio:2520/530;background-size:100% 100%}
+@media (max-width:700px){:root{--h:170px}.backdrop{aspect-ratio:auto;height:var(--h);background-size:cover}}
