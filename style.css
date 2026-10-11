@@ -68,3 +68,32 @@ footer{padding:2rem clamp(1rem,5vw,4rem);background:var(--navy);color:var(--ice)
 .hero h1.lead{font-size:clamp(1.25rem,2.4vw,1.9rem);font-weight:700;line-height:1.2;margin:1rem auto .6rem;max-width:none}
 .hero .actions{margin:2.2rem 0 1rem}
 .hero h1.lead{text-wrap:balance}
+
+/* Big hero logo, like the original Wix home page */
+.logo{width:min(78vw,clamp(150px,calc((100vh - 60px)*.58),480px));width:min(78vw,clamp(150px,calc((100svh - 60px)*.58),480px))}
+.hero{padding-bottom:calc(var(--h)*.5)}
+.hero h1.lead{font-size:clamp(1.15rem,2vw,1.6rem);margin:.5rem auto .3rem}
+.hero .actions{margin:1rem 0 .6rem}
+
+.logo{width:min(78vw,clamp(150px,calc((100vh - 60px)*.54),460px));width:min(78vw,clamp(150px,calc((100svh - 60px)*.54),460px))}
+.hero .small{margin:.2rem 0 0;font-size:1rem}
+.hero .actions{margin:.8rem 0 0}
+.hero .tag{bottom:calc(var(--h)*.42)}
+.hero .btn.ghost{background:rgba(4,16,51,.45)}
+
+/* Dark header, huge logo, strapline under it, heading at the bottom */
+.top{background:var(--navy)}
+.top a{color:var(--snow)}
+.hero{padding:clamp(.8rem,2.5vh,1.6rem) 1rem calc(var(--h)*.8)}
+.logo{width:min(86vw,clamp(150px,calc((100vh - 60px)*.64),560px));width:min(86vw,clamp(150px,calc((100svh - 60px)*.64),560px))}
+.hero .tag{position:static;margin:.5rem 0 0}
+.hero .cta{position:absolute;left:0;right:0;bottom:calc(var(--h)*.3);z-index:1;text-align:center}
+.hero .small{margin:0 0 .5rem}
+.hero .actions{margin:0}
+.hero h1.base{position:absolute;left:0;right:0;bottom:calc(var(--h)*.075);z-index:1;margin:0;padding:0 1rem;font-size:clamp(.95rem,1.7vw,1.35rem);font-weight:700;line-height:1.2;text-align:center;text-wrap:balance}
+@media (max-width:700px){
+.hero .cta,.hero h1.base{position:relative;bottom:auto;left:auto;right:auto}
+.hero .cta{margin-top:1rem}
+.hero h1.base{margin-top:1.2rem}
+.hero{padding-bottom:calc(var(--h)*.95)}
+}
