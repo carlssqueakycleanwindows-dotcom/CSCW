@@ -97,3 +97,4 @@ footer{padding:2rem clamp(1rem,5vw,4rem);background:var(--navy);color:var(--ice)
 .hero h1.base{margin-top:1.2rem}
 .hero{padding-bottom:calc(var(--h)*.95)}
 }
+.logo{transform:translateX(8.95%)}
