@@ -98,3 +98,17 @@ footer{padding:2rem clamp(1rem,5vw,4rem);background:var(--navy);color:var(--ice)
 .hero{padding-bottom:calc(var(--h)*.95)}
 }
 .logo{transform:translateX(8.95%)}
+
+/* Language switch */
+.top nav a.lang{border:1px solid rgba(255,255,255,.55);border-radius:.3rem;padding:.05rem .5rem;font-size:.85rem}
+.top nav a.lang:hover{border-color:var(--sky)}
+@media (max-width:520px){nav{gap:.4rem .55rem}nav a{font-size:.8rem}.top nav a.lang{padding:.05rem .35rem}}
+nav{align-items:center}
+@media (max-width:520px){nav{gap:.35rem .5rem}nav a{font-size:.76rem}.top nav a.lang{margin-left:auto;padding:.02rem .35rem}}
+
+/* Designer feedback: smaller logo, strapline on the sky, buttons on the mountains, bigger line under them */
+.logo{width:min(86vw,clamp(150px,calc((100vh - 60px)*.5),520px));width:min(86vw,clamp(150px,calc((100svh - 60px)*.5),520px))}
+.hero .cta{bottom:calc(var(--h)*.3)}
+.hero .small{margin:.6rem 0 0;font-size:1.2rem}
+.hero .actions{margin:0}
+@media (max-width:700px){.hero .cta{bottom:auto}}
