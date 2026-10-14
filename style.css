@@ -112,3 +112,16 @@ nav{align-items:center}
 .hero .small{margin:.6rem 0 0;font-size:1.2rem}
 .hero .actions{margin:0}
 @media (max-width:700px){.hero .cta{bottom:auto}}
+
+/* Phones only: a calmer, less cramped home page */
+@media (max-width:700px){
+.hero{padding-top:1.4rem;padding-bottom:calc(var(--h)*1.1)}
+.logo{width:min(76vw,320px)}
+.hero .tag{margin-top:.9rem}
+.hero .strap{width:min(84vw,560px)!important}
+.hero .cta{margin-top:1.7rem}
+.hero .actions{flex-direction:column;align-items:center;gap:.85rem}
+.hero .actions .btn{width:min(78vw,320px);text-align:center;padding:.95rem 1rem}
+.hero .small{margin-top:1.1rem}
+.hero h1.base{margin-top:1.9rem;padding:0 1.4rem;font-size:1.05rem}
+}
