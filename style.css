@@ -125,3 +125,15 @@ nav{align-items:center}
 .hero .small{margin-top:1.1rem}
 .hero h1.base{margin-top:1.9rem;padding:0 1.4rem;font-size:1.05rem}
 }
+
+/* The wiping bar disappears at the end instead of staying on the right edge */
+@keyframes swipe{from{left:0;opacity:1}90%{opacity:1}to{left:calc(100% - 12px);opacity:0}}
+.squeegee,.frost{pointer-events:none}
+
+/* Phones turned sideways: stack the home page content instead of overlapping it */
+@media (max-height:520px) and (min-width:701px){
+.hero{min-height:0;padding-bottom:calc(var(--h)*1.1)}
+.hero .cta,.hero h1.base{position:relative;bottom:auto;left:auto;right:auto}
+.hero .cta{margin-top:1.3rem}
+.hero h1.base{margin-top:1.3rem}
+}
